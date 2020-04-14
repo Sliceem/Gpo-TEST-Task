@@ -1,5 +1,5 @@
 # Gpo-TEST-Task
 Test Challenge for GPO company Latvia
-...
-Included SQL file
+###
+SQL file Included !!
 Chalenge is in TXT file
