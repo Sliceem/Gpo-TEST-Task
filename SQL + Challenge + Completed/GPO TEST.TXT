@@ -1,0 +1,32 @@
+Palaist homework.sql DUMP failu lai izveidotu testa datubāzi.
+
+Uzdevums Nr.1
+
+Dotas trīs tabulas Jobs, Jobsteps, Projects. 
+Tabulā Jobs, kolonnā points dotas vērtības darbu izpildei stundās. Pēc dotajiem datiem Tabulā projects izveidot jaunu kolonnu End Date un aprēķināt datumu kurā projekts beigsies, ņemot vērā, ka:
+⁃	Viens cilvēks dienā paveic 8 stundas;
+⁃	Katram projektam ir norādīts Humanpower (cik cilvēki strādā projektā) skat. tabulu Projects, kolonnu humanpower.
+⁃	Ņemt vērā, ka  brīvdienās darbi nenotiek.
+⁃	Projekta sākuma datums norādīts tabulā projects, kolonnā start_date
+
+Даны три таблицы Jobs, Jobsteps, Projects.
+В таблице Jobs, в столбце points даны значения для выполнения работы, в часах. По этим данным в Таблице projects создать новый столбец End Date и рассчитать дату которой проект закончится, учитывая, что:
+⁃ Один человек в день производит за 8 часов;
+⁃ Для каждого проекта указано Humanpower (сколько человек работает в проекте).). таблицы Projects, столбец humanpower.
+⁃ Принять во внимание, что в выходные дни работы не происходит.
+⁃ Начальная дата проекта указано в таблице projects, в столбце " start_date
+
+Uzdevums Nr.2
+
+Tabulā Jobsteps samainīt koeficientus projektam SCHOOL1:
+LAYOUT 0.02 -> 0.03
+STEEL 0.17 -> 0.15
+FIRSTSIDE 0.21 -> 0.25
+SECONDSIDE 0.35 -> 0.20/0.15 (Attiecīgi pievienot jaunu rindu kolonnā un Nosaukt Jobtype par SECONDSIDE2
+
+Tabulā Jobs veikt pārrēķinu kolonnai ‘points’ ar nosacījumiem:
+⁃	project = SCHOOL1
+⁃	status = 1
+⁃	date > 2020-03-01
++pievienot rindas ar jauno jobtype (SECONDSIDE2) nepieciešamajam projektam.
+
