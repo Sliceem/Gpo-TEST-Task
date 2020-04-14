@@ -1,6 +1,7 @@
 <?php
 
 require_once './config.php';
+require_once './autoloader.php';
 
 class DB
 {
@@ -71,7 +72,8 @@ class DB
         $stmt->execute();
     }
 
-    public function insertNewJobType( $table, $data){
+    public function insertNewJobType($table, $data)
+    {
         $stmt = $this->pdo->prepare("INSERT INTO $table (project, job_type, hus_id, floor, room, no, unit_val, status, points, date) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
         $stmt->execute([$data['project'], $data['job_type'], $data['hus_id'], $data['floor'], $data['room'], $data['no'], $data['unit_val'], $data['status'], $data['points'], $data['date']]);
     }
@@ -99,7 +101,8 @@ class DB
         return $result;
     }
 
-    public function delete (){
+    public function delete()
+    {
         $stmt = $this->pdo->prepare("DELETE from jobs where id > 42323");
         $stmt->execute();
     }
